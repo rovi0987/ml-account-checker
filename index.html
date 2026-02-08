@@ -1,0 +1,52 @@
+<HTML>
+<head>
+  <title>ML Account Age Checker</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    input {
+      padding: 10px;
+      margin: 8px 0;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #ffaa00;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Mobile Legends Account Age Checker</h1>
+<p>Estimate your ML account creation year</p>
+
+<form id="mlForm">
+  <input type="text" id="playerID" placeholder="Player ID" required><br>
+  <input type="text" id="serverID" placeholder="Server ID" required><br>
+  <input type="number" id="year" placeholder="Year First Played (ex: 2020)" required><br><br>
+  <button type="submit">Check Account Age</button>
+</form>
+
+<h2 id="result"></h2>
+
+<script>
+document.getElementById("mlForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let year = document.getElementById
